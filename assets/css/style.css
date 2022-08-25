@@ -1,0 +1,691 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+/* ---- reset ---- */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none; 
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../images/Lawrencium.jpg') scroll;
+  color: #FFF;
+  background-size: cover;
+}
+
+body::-webkit-scrollbar {
+  width: 12px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #18182b;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.596);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 3px solid rgba(21, 9, 51, 0);  /* creates padding around scroll thumb */
+}
+
+canvas{
+  display: block;
+  vertical-align: bottom;
+  z-index: 1;
+}
+
+hr{
+  opacity: 0;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+/* menu */
+
+nav{
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  top: 20px;
+}
+
+
+.logo-a{
+  text-decoration: none;
+}
+
+.logo-chaves{
+  color: #1141BD;
+  font: 600 1.3rem 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+.logo{
+  color: #FFF;
+  font: 300 1.3rem 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+.menu{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(39 39 40 / 50%);
+  backdrop-filter: saturate(180%) blur(15px);
+  width: 72%;
+  justify-content: space-between;
+  border-radius: 20px;
+  font: 400 1.2rem 'Inter', sans-serif;
+  box-shadow: 1px 1px 20px rgba(2, 2, 2, 0.1);
+  border: 1px solid rgba(2, 2, 2, 0.1);
+}
+
+ul{
+  display: flex;
+}
+
+li{
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  position: relative;
+}
+
+li a:hover{
+  color: #1141BD;
+}
+
+li a::after{
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #1141BD;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  transition: 0.3s all;
+}
+
+li a:hover::after{
+  width: 100%;
+}
+
+/* inicio site */
+#inicio{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: auto;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.titulo-inicio, #inicio h2{
+  font: 300 1.5rem 'Inter', sans-serif;
+  clear: #FFFFFF;
+}
+
+.lucaslacerda{
+  font: 400 3rem 'Inter', sans-serif;
+}
+
+.botoes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 1.5rem;
+}
+
+.btn{
+  background: linear-gradient(217.85deg, #4AA6F7 -1.54%, #1141BD 101.14%);;
+  color: #FFFFFF;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: .6s ease;
+  box-shadow: 2px 2px 10px rgba(43, 16, 141, 0.5);
+  transition: 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font: 400 1rem 'Inter', sans-serif;
+  color: #FFFFFF;
+}
+
+.btn:hover{
+  opacity: .8;
+}
+
+.btn-a{
+  text-decoration: none;
+}
+
+.btn-2{
+  background: transparent;;
+  width: 150px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #233563;
+  cursor: pointer;
+  position: relative;
+  transition: .6s ease;
+  transition: 0.6s ease;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+  font: 400 1rem 'Inter', sans-serif;
+  color: #FFFFFF;
+}
+
+.btn-2:hover{
+  border: 1px solid #293140;
+  background: #0C1221;
+}
+
+/* sobre mim */
+
+.titulos{
+  font: 400 1.5rem 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.titulos::before {
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 30px;
+  margin-right: 10px;
+  background: #1141BD;
+}
+
+.descricao{
+  margin-top: 2rem;
+  font: 300 0.8rem 'Inter', sans-serif;
+  line-height: 1.9rem;
+}
+
+#sobre-mim .btn-2{
+  margin-top: 1.5rem;
+  width: 250px;
+}
+
+.pdf {
+  background: #233563;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 500 0.7rem 'Inter', sans-serif;
+}
+
+.download{
+  text-decoration: none;
+}
+
+/* skills */
+
+.front{
+  margin-top: 100px;
+  color: #1141BD;
+  font: 600 1.4rem 'Inter', sans-serif;
+}
+
+#front-end{
+  font: 400 1rem 'Inter', sans-serif;
+  margin-bottom: 1rem;
+  color: #FFFFFF;
+}
+
+.descricao-skills{
+  display: flex;
+  align-items: center;
+  margin-top: 0.3rem;
+  font: 300 1rem 'Inter', sans-serif;
+}
+
+.descricao-skills::before {
+  content: '';
+  display: inline-block;
+  width: 3px;
+  height: 10px;
+  margin-right: 10px;
+  background: #ffffff;
+}
+
+.skills{
+  font: 300 1rem 'Inter', sans-serif;
+  margin-top: 1rem;
+}
+
+.container-progresso{
+  display: flex;
+}
+
+.progresso{
+  display: flex;
+  flex-direction: column;
+}
+
+progress{
+  width: 20rem;
+}
+
+/* projetos */
+
+#projetos h1{
+  margin-bottom: 4rem;
+  max-height: 100%;
+}
+
+/* footer */
+
+.barra{
+  width: 70%;
+  height: 1px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.849);
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+footer{
+  margin-top: 10rem;
+  color: #c9c9c9;
+  width: 100%;
+  font: 300 1rem 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  bottom: 0;
+}
+
+footer a{
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+
+/* scroll reveal */
+
+.area-1, .area-2, .area-3, .area-4, .tagline{
+  visibility: hidden;
+}
+
+
+/* responsivo */
+@media(min-width: 1280px){
+  #sobre-mim, #skills, #projetos{
+    padding: 6rem 12rem;
+    height: 100vh;
+  }
+
+  ul{
+    gap: 2rem;
+  }
+
+  .titulos{
+    font: 400 2rem 'Inter', sans-serif;
+  }
+  
+  .descricao{
+     font: 300 1.2rem 'Inter', sans-serif;
+  }
+  
+  .progresso{
+    margin: 0 6rem;
+  }
+
+  .front{
+    margin-top: 100px;
+    color: #1141BD;
+    font: 600 2rem 'Inter', sans-serif;
+  }
+  
+  #front-end{
+    font: 400 1.5rem 'Inter', sans-serif;
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+  }
+
+  .container{
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row;
+    perspective: 1000px;
+    perspective-origin: center;
+  }
+  
+  .container a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  .col{
+    height:  100%;
+    max-height: 100%;
+    transition: transform 600ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+    transform: translateZ(34px) scale(.98);
+    flex: 0 0 33.3333%; 
+    position: relative;
+  }
+  
+  .col:nth-of-type(1){
+    transform: rotateY(5deg) translateZ(34px) scale(.98);
+  }
+  
+  .col:nth-of-type(3){
+    transform: rotateY(-5deg) translateZ(34px) scale(.98);
+  }
+  
+  .col:hover,
+  .col:focus{
+    transform: translateZ(34px);
+    transition: transform 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000), opacity 300ms ease;
+  }
+  
+  .card-container{
+    position: relative;
+    width: calc(100% - 3rem);
+    height:  calc(33.3% - 10px);
+    margin: 17px;
+    padding: 8px;
+    text-align: center;
+    opacity: 1;
+    max-height: 100%;
+  }
+  
+  .card-container:hover,
+  .card-container:focus{
+    opacity: 1;
+  }
+  
+  .card{
+    border-radius: 5px;
+    height: 100%;
+    max-height: 100%;
+    transition: all 300ms ease-out;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+    opacity: 1;
+    padding: 13px 21px;
+    
+  }
+  
+  .card:before,
+  .card:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    transition: transform 300ms ease;
+    transform: scale(.98);
+    filter: blur(0.4px);
+  }
+  
+  .card:before{
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .card-container:hover .card:before,
+  .card-container:hover .card:after,
+  .card-container:focus .card:before,
+  .card-container:focus .card:after{
+    opacity: .34;
+    transform: scale(1);
+  }
+  
+  .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+        background-image: url('../images/jordanshoes.png');
+  }
+  
+  .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+        background-image: url('../images/originsix.png');
+  }
+  
+  .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+        background-image: url('../images/login.png');
+  }
+  
+  .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
+        background-image: url('../images/tela-instagram.png');
+  }
+  
+  .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
+        background-image: url('../images/spotify-clone.png');
+  }
+  
+  .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
+        background-image: url('../images/calculadora.png');
+  }
+  
+  .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
+        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
+  }
+  
+  .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
+        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
+  }
+  
+  .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
+        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
+  }
+  
+  .card:after{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
+  }
+  
+  h4{
+    text-align: left;
+    font: 400 1.125rem 'Inter', sans-serif;
+    transform: translateY(5px);
+    transition: transform 450ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    max-width: 320px;
+    outline: 1px solid transparent;
+  }
+  
+  .overlay:hover ~ .card h4,
+  .overlay:focus ~ .card h4{
+    transform: translateZ(144px);
+  }
+  
+  .card > span{
+    font-size: 34px;
+    opacity: 0;
+    transform: translateX(-3px);
+    transition: all 300ms ease;
+  }
+  
+  .card-container:hover > .card > h4,
+  .card-container:focus > .card > h4{
+    transform: translateY(-13px);
+  }
+  
+  .card-container:hover > .card > span,
+  .card-container:focus > .card > span{
+   opacity: 1;
+      transform: translateX(3px);
+    animation: slideRight 300ms ease;
+  }
+}
+
+@media (max-width: 1279px){
+    .menu{
+      font: 300 1rem 'Inter', sans-serif;
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+
+    .logo-chaves, .logo{
+    display: none;
+   }
+
+    #sobre-mim, #skills, #projetos{
+      margin: 6rem 1rem;
+      overflow-y: hidden;
+    }
+  
+    body{
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .container-progresso{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .container a{
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  
+  .col{
+    margin-bottom: -17px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .card-container{
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    max-height: 100%;
+    height: 200px;
+  }
+  
+  .card{
+    border-radius: 5px;
+    height: 100%;
+    max-height: 100%;
+    transition: all 300ms ease-out;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+    padding: 13px 21px;
+  }
+  
+  .card:before,
+  .card:after{
+    content: '';
+    position: absolute;
+    left:0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: .5;
+    filter: blur(0.4px);
+  }
+  
+  .card:before{
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  
+  .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+        background-image: url('../images/jordanshoes.png');
+  }
+  
+  .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+        background-image: url('../images/originsix.png');
+  }
+  
+  .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+        background-image: url('../images/login.png');
+  }
+  
+  .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
+        background-image: url('../images/tela-instagram.png');
+  }
+  
+  .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
+        background-image: url('../images/spotify-clone.png');
+  }
+  
+  .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
+        background-image: url('../images/calculadora.png');
+  }
+  
+  .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
+        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
+  }
+  
+  .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
+        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
+  }
+  
+  .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
+        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
+  }
+  
+  .card:after{
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
+  }
+  
+  h4{
+    text-align: left;
+    font: 400 1.125rem 'Inter', sans-serif;
+    max-width: 320px;
+    outline: 1px solid transparent;
+  }
+
+  footer{
+    margin-bottom: 1rem;
+  }
+}
