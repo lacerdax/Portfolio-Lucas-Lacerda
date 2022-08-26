@@ -10,6 +10,12 @@
   user-select: none; 
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+
 body {
   margin: 0;
   background: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url('../images/Lawrencium.jpg') scroll;
@@ -548,6 +554,7 @@ footer a{
 }
 
 @media (max-width: 1279px){
+  
     .menu{
       font: 300 1rem 'Inter', sans-serif;
       width: 90%;
