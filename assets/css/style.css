@@ -343,6 +343,43 @@ footer a{
   visibility: hidden;
 }
 
+.col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../images/jordanshoes.png');
+}
+
+.col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../images/originsix.png');
+}
+
+.col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
+  background-image: url('../images/login.png');
+}
+
+.col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
+  background-image: url('../images/tela-instagram.png');
+}
+
+.col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
+  background-image: url('../images/spotify-clone.png');
+}
+
+.col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
+  background-image: url('../images/calculadora.png');
+}
+
+.col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
+  background-image: url('../images/codelandia.png');
+}
+
+.col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
+  background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
+}
+
+.col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
+  background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
+}
+
+
 
 /* responsivo */
 @media(min-width: 1280px){
@@ -479,42 +516,7 @@ footer a{
     transform: scale(1);
   }
   
-  .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
-        background-image: url('../images/jordanshoes.png');
-  }
-  
-  .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-        background-image: url('../images/originsix.png');
-  }
-  
-  .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-        background-image: url('../images/login.png');
-  }
-  
-  .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
-        background-image: url('../images/tela-instagram.png');
-  }
-  
-  .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
-        background-image: url('../images/spotify-clone.png');
-  }
-  
-  .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
-        background-image: url('../images/calculadora.png');
-  }
-  
-  .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
-        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
-  }
-  
-  .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
-        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
-  }
-  
-  .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
-        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
-  }
-  
+ 
   .card:after{
     background: linear-gradient(to bottom, rgba(0,0,0,0) 50%,rgba(0,0,0,0.89) 100%);
   }
@@ -642,43 +644,6 @@ footer a{
   .card:before{
     background-size: cover;
     background-position: 50% 50%;
-  }
-  
-  
-  .col:nth-of-type(1) .card-container:nth-of-type(1) .card:before{
-        background-image: url('../images/jordanshoes.png');
-  }
-  
-  .col:nth-of-type(2) .card-container:nth-of-type(1) .card:before{
-        background-image: url('../images/originsix.png');
-  }
-  
-  .col:nth-of-type(3) .card-container:nth-of-type(1) .card:before{
-        background-image: url('../images/login.png');
-  }
-  
-  .col:nth-of-type(1) .card-container:nth-of-type(2) .card:before{
-        background-image: url('../images/tela-instagram.png');
-  }
-  
-  .col:nth-of-type(2) .card-container:nth-of-type(2) .card:before{
-        background-image: url('../images/spotify-clone.png');
-  }
-  
-  .col:nth-of-type(3) .card-container:nth-of-type(2) .card:before{
-        background-image: url('../images/calculadora.png');
-  }
-  
-  .col:nth-of-type(1) .card-container:nth-of-type(3) .card:before{
-        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/pia19808.jpg?itok=rgxgamMM');
-  }
-  
-  .col:nth-of-type(2) .card-container:nth-of-type(3) .card:before{
-        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/e0102_lg.jpg?itok=sd9lOayI');
-  }
-  
-  .col:nth-of-type(3) .card-container:nth-of-type(3) .card:before{
-        background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
   }
   
   .card:after{
