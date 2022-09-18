@@ -12,6 +12,16 @@
     <!-- API -->
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- mouse follower -->
+
+    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+
+
     <!-- favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.png" />
 
@@ -20,6 +30,8 @@
     <title>Portfólio | Lucas Lacerda</title>
   </head>
   <body>
+        <!-- mouse follower -->
+        <div class="cursor"></div>
     <hr id="home" />
     <!-- particles.js container -->
     <div id="particles-js">
@@ -220,5 +232,9 @@
     <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="assets/js/main.js"></script>
+
+        <script>
+    var cursor = new MouseFollower();
+    </script>
   </body>
 </html>

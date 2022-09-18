@@ -379,8 +379,6 @@ footer a{
   background-image: url('https://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/asteroid20180605-home.jpg?itok=KSUffiCR');
 }
 
-
-
 /* responsivo */
 @media(min-width: 1280px){
   #sobre-mim, #skills, #projetos{

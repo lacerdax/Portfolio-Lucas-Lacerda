@@ -289,5 +289,3 @@ function buildSeamlessLoop(items, spacing) {
     )
   return seamlessLoop
 }
-
-// cards
