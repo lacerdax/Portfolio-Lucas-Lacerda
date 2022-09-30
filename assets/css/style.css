@@ -288,8 +288,50 @@ li a:hover::after{
   margin-top: 1rem;
 }
 
+.container-skills{
+  margin-top: 1rem;
+}
+
+.container-box-skills{
+  display: flex;
+  margin-top: 0.3rem;
+  flex-wrap: wrap;
+}
+
+.box-skills{
+  background-color: #101a35;
+  width: 9rem;
+  min-width: 9rem;
+  height: 3rem;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap ;
+  border: 1px solid #1a2749;
+  border-radius: 0.4rem;
+  box-shadow: 0.3px 0.3px 5px rgb(10, 9, 20);
+  margin: 1rem 3rem 0 0;
+}
+
+.box-skills:hover{
+  cursor: pointer;
+}
+
+p.skills-1{
+  font: 400 1rem "Inter", sans-serif;
+}
+
+
+.container-skills img{
+  width: 1.5rem;
+
+}
+
+
 .container-progresso{
   display: flex;
+  
 }
 
 .progresso{
@@ -334,6 +376,11 @@ footer{
 footer a{
   text-decoration: none;
   color: #c9c9c9;
+}
+
+.footer-link{
+  color: #0048ff;
+  font: 500 1.1rem "Inter", sans-serif; 
 }
 
 
@@ -382,8 +429,8 @@ footer a{
 /* responsivo */
 @media(min-width: 1280px){
   #sobre-mim, #skills, #projetos{
-    padding: 6rem 12rem;
-    height: 100vh;
+    padding: 4rem 12rem;
+    
   }
 
   ul{
@@ -576,6 +623,12 @@ footer a{
     body{
       max-width: 100%;
       width: 100%;
+    }
+
+    .box-skills{
+      min-width: 20rem;
+      margin: 1rem auto;
+      display: flex; 
     }
 
     .container-progresso{
