@@ -2,7 +2,7 @@
 
 <!---Esses são exemplos. Veja https://shields.io para outras pessoas ou para personalizar este conjunto de escudos. Você pode querer incluir dependências, status do projeto e informações de licença aqui--->
 
-### Acesse //
+### Acesse
 <a href="https://portfolio-lucaslacerda.vercel.app" target="_blank">Clique aqui para visualizar o site!</a>
 
 ![screencapture-127-0-0-1-5500-index-html-2022-08-25-10_31_48](https://user-images.githubusercontent.com/98031390/186691991-fb19450d-8be8-4ea5-9bee-315c435de9d1.png)
