@@ -1,265 +1,338 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Lucas Lacerda" />
+    <meta
+      name="description"
+      content="Portfólio Front-end Lucas Lacerda Dev Jr"
+    />
+    <meta
+      name="keywords"
+      content="desenvolvimento,web,apps,aplicativos,front-end,profissional,portfolio"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="author" content="Lucas Lacerda" />
-  <meta name="description" content="Portfólio Front-end Lucas Lacerda Dev Jr" />
-  <meta name="keywords" content="desenvolvimento,web,apps,aplicativos,front-end,profissional,portfolio" />
+    <!-- API -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-  <!-- API -->
-  <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- carregar o fundo antes do site -->
+    <script type="text/javascript">
+      $(window).load(function () {
+        $("body").css("display", "block");
+      });
+    </script>
 
-  <!-- mouse follower -->
+    <!-- mouse follower -->
 
-  <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css"
+    />
 
-  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-  <!-- testando onload  -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
+    <!-- testando onload  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
-  <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
 
-  <!-- style -->
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <title>Portfólio | Lucas Lacerda</title>
-</head>
+    <!-- style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Portfólio | Lucas Lacerda</title>
+  </head>
 
-<body>
-  <!-- mouse follower -->
-  <div class="cursor"></div>
-  <hr id="home" />
-  <!-- particles.js container -->
-  <div id="particles-js">
+  <body>
+    <!-- mouse follower -->
+    <div class="cursor"></div>
+    <hr id="home" />
+    <!-- particles.js container -->
+    <div id="particles-js">
+      <!-- menu -->
+      <header>
+        <nav>
+          <div class="menu">
+            <a class="logo-a" href="#home">
+              <div class="logo-chaves">
+                { <span class="logo">Lucas Lacerda</span> }
+              </div>
+            </a>
+            <ul>
+              <li><a href="#home">Início</a></li>
+              <li><a href="#sobremim">Sobre</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projetos">Projetos</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
 
-    <!-- menu -->
-    <header>
-      <nav>
-        <div class="menu">
-          <a class="logo-a" href="#home">
-            <div class="logo-chaves">{ <span class="logo">Lucas Lacerda</span> }
-            </div>
-          </a>
-          <ul>
-            <li><a href="#home">Início</a></li>
-            <li><a href="#sobremim">Sobre</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-          </ul>
+      <!-- section inicio -->
+      <section id="inicio" class="area-1">
+        <h1 class="titulo-inicio">
+          Olá, eu sou o <br />
+          <span class="lucaslacerda tagline" id="element">
+            Lucas Lacerda <span class="emoji"> :) </span></span
+          >
+        </h1>
+        <h2 class="tagline">
+          Desenvolvedor <span class="front-end">Full Stack Web</span>
+        </h2>
+
+        <div class="botoes tagline">
+          <a
+            class="btn-a"
+            target="_blank"
+            href="https://www.linkedin.com/in/lucas-araujo-lacerda/"
+            ><button class="btn">
+              <img src="assets/images/linkedin.svg" alt="" />Linkedin
+            </button></a
+          >
+
+          <a class="btn-a" target="_blank" href="https://github.com/lacerdax"
+            ><button class="btn-2">
+              <img src="assets/images/github.svg" alt="" />GitHub
+            </button></a
+          >
         </div>
-      </nav>
-    </header>
+      </section>
+    </div>
 
-    <!-- section inicio -->
-    <section id="inicio" class="area-1">
-      <h1 class="titulo-inicio">
-        Olá, eu sou o <br />
-        <span class="lucaslacerda tagline" id="element"> Lucas Lacerda <span class="emoji"> :) </span></span>
-      </h1>
-      <h2 class="tagline">Desenvolvedor <span class="front-end">Full Stack Web</span></h2>
+    <hr id="sobremim" />
 
-      <div class="botoes tagline">
-        <a class="btn-a" target="_blank" href="https://www.linkedin.com/in/lucas-araujo-lacerda/"><button class="btn">
-            <img src="assets/images/linkedin.svg" alt="" />Linkedin
-          </button></a>
+    <!-- section about-me -->
+    <section id="sobre-mim" class="area-2">
+      <h1 class="titulos">Sobre mim</h1>
+      <p class="descricao tagline">
+        Lucas Lacerda, entusiasta de TI de 23 anos, nascido em Brasília, formado
+        em Análise e Desenvolvimento de Sistemas e cursando Engenharia de
+        Software. Com habilidades em PHP e JavaScript, além de experiência em
+        desenvolvimento web, sou um profissional dedicado e proativo. Busco
+        oportunidades para aplicar meus conhecimentos, contribuir com soluções
+        eficientes em TI e agregar valor à equipe. Mantenho-me atualizado com as
+        últimas tendências, pronto para enfrentar desafios e promover inovação.
+      </p>
+      <a
+        class="download tagline"
+        href="assets/cv/Lucas_Lacerda_CV.pdf"
+        download="Lucas_Lacerda_CV"
+        type="application/pdf"
+        ><button class="btn-2">
+          Lucas_Lacerda_cv_.pdf <span class="pdf">PDF</span>
+        </button></a
+      >
+    </section>
 
-        <a class="btn-a" target="_blank" href="https://github.com/lacerdax"><button class="btn-2">
-            <img src="assets/images/github.svg" alt="" />GitHub
-          </button></a>
+    <hr id="skills-sessao" />
+
+    <!-- section skills -->
+    <section id="skills" class="area-3">
+      <h1 class="titulos">Minhas Skills</h1>
+      <div class="container-skills">
+        <div class="container-box-skills">
+          <div class="box-skills">
+            <img class="skills-img" src="/assets/images/html5.svg" alt="" />
+            <p class="skills-1">HTML</p>
+          </div>
+
+          <div class="box-skills">
+            <img class="skills-img" src="/assets/images/css3.svg" alt="" />
+            <p class="skills-1">CSS</p>
+          </div>
+          <div class="box-skills">
+            <img
+              class="skills-img"
+              src="/assets/images/javascript.svg"
+              alt=""
+            />
+            <p class="skills-1">Javascript</p>
+          </div>
+
+          <div class="box-skills">
+            <img class="skills-img" src="/assets/images/git.svg" alt="" />
+            <p class="skills-1">Git</p>
+          </div>
+        </div>
       </div>
     </section>
-  </div>
 
-  <hr id="sobremim" />
+    <hr id="projetos-sessao" />
 
-  <!-- section about-me -->
-  <section id="sobre-mim" class="area-2">
-    <h1 class="titulos">Sobre mim</h1>
-    <p class="descricao tagline">
-    Lucas Lacerda, entusiasta de TI de 23 anos, nascido em Brasília, formado em Análise e Desenvolvimento de Sistemas e cursando Engenharia de Software. Com habilidades em PHP e JavaScript, além de experiência em desenvolvimento web, sou um profissional dedicado e proativo. Busco oportunidades para aplicar meus conhecimentos, contribuir com soluções eficientes em TI e agregar valor à equipe. Mantenho-me atualizado com as últimas tendências, pronto para enfrentar desafios e promover inovação.  
-    </p>
-    <a class="download tagline" href="assets/cv/Lucas_Lacerda_CV.pdf" download="Lucas_Lacerda_CV"
-      type="application/pdf"><button class="btn-2">Lucas_Lacerda_cv_.pdf <span class="pdf">PDF</span></button></a>
-  </section>
+    <!-- sections projetos -->
+    <section id="projetos" class="area-4">
+      <h1 class="titulos">Projetos</h1>
+      <div class="container tagline">
+        <div class="col">
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/JordanShoes/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>
+                  Jordan Shoes | <br />
+                  | Desafio Codelândia
+                </h4>
+                <span class="chev"> &rsaquo;</span>
+              </div>
+            </div>
+          </a>
 
-  <hr id="skills-sessao">
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/instagram-dio/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>
+                  Tela Login Instagram | <br />
+                  | DIO
+                </h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
 
-  <!-- section skills -->
-  <section id="skills" class="area-3">
-    <h1 class="titulos">Minhas Skills</h1>
-    <div class="container-skills">
-      <div class="container-box-skills">
-        <div class="box-skills">
-          <img class="skills-img" src="/assets/images/html5.svg" alt="">
-          <p class="skills-1">HTML</p>
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/codelandia/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>
+                  Codelândia |<br />
+                  | Projetos Codelândia
+                </h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
         </div>
 
-        <div class="box-skills">
-          <img class="skills-img" src="/assets/images/css3.svg" alt="">
-          <p class="skills-1">CSS</p>
+        <div class="col">
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/originsix/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>OriginSix | <br />| Discover Rocketseat</h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
 
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/spotify-clone/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>
+                  Spotify | <br />
+                  | Clone
+                </h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
+
+          <a target="_blank" class="card-container" href="">
+            <div class="card-container">
+              <div class="card">
+                <h4>Em breve |</h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
         </div>
-        <div class="box-skills">
-          <img class="skills-img" src="/assets/images/javascript.svg" alt="">
-          <p class="skills-1">Javascript</p>
+
+        <div class="col">
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/Login/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>Login |<br />| Desafio Codelândia</h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
+
+          <a
+            target="_blank"
+            class="card-container"
+            href="https://lacerdax.github.io/calculadora/"
+          >
+            <div class="card-container">
+              <div class="card">
+                <h4>Calculadora |</h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
+
+          <a target="_blank" class="card-container" href="">
+            <div class="card-container">
+              <div class="card">
+                <h4>Em breve |</h4>
+                <span class="chev">&rsaquo;</span>
+              </div>
+            </div>
+          </a>
         </div>
-
-        <div class="box-skills">
-          <img class="skills-img" src="/assets/images/git.svg" alt="">
-          <p class="skills-1">Git</p>
-        </div>
       </div>
-    </div>
+    </section>
 
-  </section>
+    <!-- final page -->
+    <footer>
+      <div class="barra"></div>
+      <p>
+        © 2022
+        <a
+          target="_blank"
+          class="footer-link"
+          href="https://github.com/lacerdax"
+          >Lucas Lacerda</a
+        >. All rights reserved.
+      </p>
+    </footer>
 
-  <hr id="projetos-sessao">
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
-  <!-- sections projetos -->
-  <section id="projetos" class="area-4">
-    <h1 class="titulos">Projetos</h1>
-    <div class="container tagline">
+    <script>
+      var cursor = new MouseFollower();
+      var $doc = $("html, body");
+      $("a").click(function () {
+        $doc.animate(
+          {
+            scrollTop: $($.attr(this, "href")).offset().top - 40,
+          },
+          100
+        );
+        return false;
+      });
 
-      <div class="col">
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/JordanShoes/">
-          <div class="card-container">
-            <div class="card">
-              <h4>Jordan Shoes | <br /> | Desafio Codelândia</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/instagram-dio/">
-          <div class="card-container">
-            <div class="card">
-              <h4>Tela Login Instagram | <br /> | DIO</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/codelandia/">
-          <div class="card-container">
-
-            <div class="card">
-              <h4>Codelândia |<br />
-                | Projetos Codelândia</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <div class="col">
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/originsix/">
-          <div class="card-container">
-            <div class="card">
-              <h4>OriginSix | <br />| Discover Rocketseat</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/spotify-clone/">
-          <div class="card-container">
-
-            <div class="card">
-              <h4>Spotify | <br /> | Clone</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-
-
-        <a target="_blank" class="card-container" href="">
-          <div class="card-container">
-
-            <div class="card">
-              <h4>Em breve |</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-      </div>
-
-      <div class="col">
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/Login/">
-          <div class="card-container">
-
-            <div class="card">
-              <h4>Login |<br />| Desafio Codelândia</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-        <a target="_blank" class="card-container" href="https://lacerdax.github.io/calculadora/">
-          <div class="card-container">
-            <div class="card">
-              <h4>Calculadora |</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-
-        <a target="_blank" class="card-container" href="">
-          <div class="card-container">
-
-            <div class="card">
-              <h4>Em breve |</h4>
-              <span class"chev">&rsaquo;</span>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- final page -->
-  <footer>
-    <div class="barra"></div>
-    <p>© 2022 <a target="_blank" class="footer-link" href="https://github.com/lacerdax">Lucas Lacerda</a>. All rights
-      reserved.</p>
-  </footer>
-
-  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <script src="assets/js/main.js"></script>
-
-  <script>
-    var cursor = new MouseFollower();
-    var $doc = $('html, body');
-    $('a').click(function () {
-      $doc.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top - 40
-      }, 100);
-      return false;
-    });
-
-    new TypeIt("#element", {
-      strings: "",
-      speed: 220,
-      loop: false,
-    }).go();
-  </script>
-</body>
-
+      new TypeIt("#element", {
+        strings: "",
+        speed: 220,
+        loop: false,
+      }).go();
+    </script>
+  </body>
 </html>
